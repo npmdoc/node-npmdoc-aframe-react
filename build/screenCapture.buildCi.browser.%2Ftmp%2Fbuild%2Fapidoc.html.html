@@ -1,0 +1,154 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/aframevr/aframe-react#readme">aframe-react (v4.1.1)</a>
+</h1>
+<h4>Build virtual reality experiences with A-Frame and React.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.aframe-react">module aframe-react</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.aframe-react.Entity">
+            function <span class="apidocSignatureSpan">aframe-react.</span>Entity
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.aframe-react.Scene">
+            function <span class="apidocSignatureSpan">aframe-react.</span>Scene
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.aframe-react" id="apidoc.module.aframe-react">module aframe-react</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.aframe-react.Entity" id="apidoc.element.aframe-react.Entity">
+        function <span class="apidocSignatureSpan">aframe-react.</span>Entity
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Entity() {
+  var _ref;
+
+  var _temp, _this, _ret;
+
+  _classCallCheck(this, Entity);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Entity.__proto__ || Object.getPrototypeOf(Entity)).call
+.apply(_ref, [this].concat(args))), _this), _this.initEntity = function (el) {
+    var props = _this.props;
+    if (!el) {
+      return;
+    }
+
+    // Store.
+    _this.el = el;
+
+    // Attach events.
+    if (props.events) {
+      Object.keys(props.events).forEach(function (eventName) {
+        addEventListeners(el, eventName, props.events[eventName]);
+      });
+    }
+
+    // Update entity.
+    doSetAttributes(el, props);
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.aframe-react.Scene" id="apidoc.element.aframe-react.Scene">
+        function <span class="apidocSignatureSpan">aframe-react.</span>Scene
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Scene(props) {
+  _classCallCheck(this, Scene);
+
+  var _this2 = _possibleConstructorReturn(this, (Scene.__proto__ || Object.getPrototypeOf(Scene)).call(this, props));
+
+  _this2.isScene = true;
+  return _this2;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
